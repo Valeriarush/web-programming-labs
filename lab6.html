@@ -25,7 +25,7 @@
 
         <div class="content">
             <form>
-                <div>
+                <div id="user-data">
                     <div>
                         <span id="your-name">Ваше имя</span>: <input type="text" id="input-name" placeholder="введите имя">
                     </div>
@@ -36,8 +36,8 @@
                         <span id="your-age">Ваш возраст</span>: <input type="number" id="input-age" placeholder="введите возраст">
                     </div>
                     <div>
-                        <input type="button" value="ок">
-                        <input type="reset" value="сброс">
+                        <input type="button" value="ок" id="ok-button" onclick="showAlert()">
+                        <input type="reset" value="сброс" id="reset-button">
                     </div>
                 </div>
             </form>
