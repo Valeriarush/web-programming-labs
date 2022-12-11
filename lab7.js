@@ -30,3 +30,18 @@ function  showAlert(){
     }
     alert(greeting + userName + ' ' + userSurname + '\n' + 'Ваш возраст: ' + userAge);
 }
+
+function makeStairs(){
+    let stairs = document.querySelector('#stairs');
+    let stepCount = 20;
+    for(let i = 0; i<stepCount; i++>){
+        stairs.innerHTML += '<div class="step"></div>';
+    }
+
+    let steps = document.querySelectorAll('.step');
+    for(let i = 0; i<steps.length; i++>) {
+        step[i].style.left = (30 + 10*i) + 'px';
+        step[i].style.top = (30 + 80*i) + 'px';
+        step[i].innerHTML = 'Блок номер ' + i;
+    }
+}
